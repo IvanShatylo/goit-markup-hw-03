@@ -1,11 +1,6 @@
 html {
 	box-sizing: border-box;
 }
-*,
-*::after,
-*::before {
-	box-sizing: inherit;
-}
 
 :root {
     --primary-text-color: #2196F3;
@@ -75,9 +70,12 @@ background-color: var(--title-text-color);
     padding-right: 15px;
 }
 
+.section {
+    padding: 94px 0;
+}
+
 .header {
     border-bottom: 1px solid #EEEEEE;
-    margin-bottom: 90px;
 }
 
 .main-nav {
@@ -169,6 +167,8 @@ color: var(--primary-text-color);
 .main-section-item {
     margin-top: 0;
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -176,7 +176,7 @@ color: var(--primary-text-color);
     text-transform: uppercase;
     color: var(--title-text-color);
     width: 700px;
-    margin-left: 240px;
+    
 }
 
 .button {
@@ -202,9 +202,6 @@ background-color: #188CE8;
 
 .advantages {
     display: flex;
-    margin-top: 90px;
-    margin-bottom: 90px;
-    
 }
 
 .menu-adv-item {
@@ -233,9 +230,7 @@ margin-bottom: 10;
     margin-bottom: 0;
 }
 
-.section-d {
-padding-bottom: 90px;
-}
+
 .section-list {
 display: flex;
 }
@@ -256,9 +251,7 @@ padding-right: 30px;
     padding-right: 0;
 }
 
-.section-team{
-    padding-top: 90px;
-}
+
 
 .team-list {
     display: flex;
@@ -270,6 +263,10 @@ padding-right: 30px;
     width: 270px;
     height: 368px;
     text-align: center;
+    background: var(--title-text-color);
+
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
 }
 
 .team-name {
@@ -292,7 +289,6 @@ line-height: 1.18;
 
 .footer {
 background-color: #2F303A;
-margin-top: 90px;
 }
 
 .logo-footer {
@@ -394,6 +390,16 @@ color: var(--title-text-color);
     margin-right: 30px;
     margin-bottom: 30px;
 }
+
+.site-item:hover,
+.site-item:focus {
+    background: var(--title-text-color);
+
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+}
+
+
 
 .img-link {
     width: 370;
