@@ -73,9 +73,11 @@ background-color: var(--title-text-color);
 .section {
     padding: 94px 0;
 }
-
+ 
+/*--------------Header--------------*/
 .header {
     border-bottom: 1px solid #EEEEEE;
+    padding: 24px 0;
 }
 
 .main-nav {
@@ -94,9 +96,7 @@ font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 color: #000;
-padding-top: 20px;
-padding-bottom: 25px;
-padding-right: 90px;
+margin-right: 93px;
 }
 .logo-color{
 color: var(--primary-text-color)
@@ -106,12 +106,11 @@ color: var(--primary-text-color)
     display: flex;
     
 }
-
-.nav, .nav-item {
+.nav-item {
     margin-right: 50px;
 }
 
-nav, .nav-item:last-child {
+.nav-item:last-child {
     margin-right: 0;
 }
 
@@ -158,7 +157,9 @@ color: var(--accent-color);
 color: var(--primary-text-color);
 }
 
+/*---------------Main-section--------------*/
 .main-section{
+    padding: 200px 0;
     background-color: #2F303A;
     text-align: center;
 }
@@ -200,6 +201,21 @@ color: var(--primary-text-color);
 background-color: #188CE8;
 }
 
+
+/*----------------Advanteges-----------------*/
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
 .advantages {
     display: flex;
 }
@@ -230,6 +246,10 @@ margin-bottom: 10;
     margin-bottom: 0;
 }
 
+/*-----------------What are we doing-----------------*/
+.section-d {
+    padding-top: 0;
+}
 
 .section-list {
 display: flex;
@@ -252,6 +272,10 @@ padding-right: 30px;
 }
 
 
+/*----------Our team--------------*/
+.section-c {
+    background-color: #F5F4FA;
+}
 
 .team-list {
     display: flex;
@@ -269,17 +293,21 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0p
 border-radius: 0px 0px 4px 4px;
 }
 
+.team-item:last-child {
+    margin-right: 0;
+}
+
 .team-name {
-    margin-top: 30px;
-    margin-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 10px;
 font-style: normal;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.18;
 }
 .team-position{
-    margin-top: 0;
-    margin-bottom: 30px;
+    padding-top: 0;
+    padding-bottom: 30px;
     font-weight: 400;
     line-height: 1.71;
     color: var(--accent-color);
@@ -292,7 +320,8 @@ background-color: #2F303A;
 }
 
 .logo-footer {
-    padding-bottom: 20px;
+    display: block;
+    margin-bottom: 20px;
     font-family: 'Raleway',sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -300,7 +329,7 @@ background-color: #2F303A;
     color: var(--title-text-color);
 }
 
-.nav-footer {
+.div-footer {
     padding-top: 60px;
     padding-bottom: 90px;
 }
@@ -314,7 +343,6 @@ color: var(--title-text-color);
 
 .contact-us-list {
     margin-bottom: 10px;
-    width: 230px;
 }
 
 .contact-us-list:last-child{
